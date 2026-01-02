@@ -3,6 +3,7 @@
 ## What We Built
 
 A standalone skills library system with:
+
 1. **Skills library** - Battle-tested techniques and patterns
 2. **Slash commands** - Quick workflow triggers (`/brainstorm`, `/write-plan`, etc.)
 3. **Discovery tool** - `skills-search` for finding relevant skills
@@ -45,7 +46,8 @@ cd clank
 ```
 
 **What the installer does:**
-- Backs up existing `~/.claude/skills` and `~/.claude/commands` (timestamped)
+
+- Backs up existing `~/.clank/clank/skills` and `~/.clank/clank/commands` (timestamped)
 - Creates symlinks to your cloned repo
 - Installs `skills-search` tool to `~/.local/bin`
 - Verifies installation
@@ -60,11 +62,13 @@ Copy content from `skills/CLAUDE_MD_REFERENCE.md` into your `~/.claude/CLAUDE.md
 Before ANY task: `skills-search PATTERN`
 
 **skills-search uses grep patterns.** Examples:
+
 - `skills-search 'test.*driven|TDD'`
 - `skills-search 'debug.*systematic|root.cause'`
 - `skills-search 'refactor|extract'`
 
 **Process:**
+
 1. Run `skills-search` with grep pattern for what you're doing
 2. If skills found: READ them completely and FOLLOW them
 3. If not found: Proceed carefully (search is logged for gap analysis)
@@ -73,7 +77,7 @@ Before ANY task: `skills-search PATTERN`
 
 **Failure condition:** Skills exist and you didn't use them = you failed.
 
-**RIGHT NOW, go read:** `@~/.claude/skills/getting-started/SKILL.md`
+**RIGHT NOW, go read:** `~/.clank/clank/skills/getting-started/SKILL.md`
 ```
 
 ## Usage
@@ -91,6 +95,7 @@ skills-search 'validat.*input'
 ### Using Commands
 
 In Claude:
+
 - `/brainstorm` - Interactive design refinement
 - `/write-plan` - Create implementation plan
 - `/execute-plan` - Execute plan in batches
@@ -103,10 +108,10 @@ cd /path/to/clank
 git pull origin main
 
 # Check wiki health
-~/.claude/skills/meta/gardening-skills-wiki/garden.sh
+~/.clank/clank/skills/meta/gardening-skills-wiki/garden.sh
 
 # Analyze what skills are missing
-~/.claude/skills/meta/gardening-skills-wiki/analyze-search-gaps.sh
+~/.clank/clank/skills/meta/gardening-skills-wiki/analyze-search-gaps.sh
 ```
 
 ## Key Design Decisions
@@ -120,6 +125,7 @@ git pull origin main
 ## Testing Results
 
 Pressure-tested variants showed:
+
 - **NULL baseline** - Agents want to check for help naturally
 - **Soft suggestions** - "Consider checking" gives permission to skip (failed)
 - **Emphatic commands** - "MUST check" maintained compliance under all pressures
