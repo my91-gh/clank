@@ -1,5 +1,5 @@
 <EXTREMELY_IMPORTANT>
-You have a personal skills wiki at ~/.claude/skills/ with proven techniques, patterns, and tools that give you new capabilities.
+You have a personal skills wiki at ~/.clank/clank/skills/ with proven techniques, patterns, and tools that give you new capabilities.
 
 STOP. Before doing ANYTHING else in this conversation, read this file: @skills/getting-started/SKILL.md
 

@@ -6,9 +6,9 @@ set -euo pipefail
 
 # Detect if running from repo or installed location
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-if [[ "$SCRIPT_DIR" == *"/.claude/skills/getting-started" ]]; then
+if [[ "$SCRIPT_DIR" == *"/.clank/clank/skills/getting-started" ]]; then
     # Installed location
-    SKILLS_DIR="${HOME}/.claude/skills"
+    SKILLS_DIR="${HOME}/.clank/clank/skills"
 else
     # Running from repo
     SKILLS_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"

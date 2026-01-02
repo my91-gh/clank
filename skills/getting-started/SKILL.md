@@ -7,24 +7,27 @@ version: 2.0.0
 
 # Getting Started with Skills
 
-Your personal wiki of proven techniques, patterns, and tools at `~/.claude/skills/`.
+Your personal wiki of proven techniques, patterns, and tools at `../skills/`.
 
 ## How to Reference Skills
 
 **DO NOT use @ links** - they force-load entire files, burning 200k+ context instantly.
 
 **INSTEAD, use skill path references:**
+
 - Format: `skills/category/skill-name` (no @ prefix, no /SKILL.md suffix)
 - Example: `skills/collaboration/brainstorming` or `skills/testing/test-driven-development`
 - Load with Read tool only when needed
 
 **When you see skill references in documentation:**
-- `skills/path/name` → Use Read tool on `~/.claude/skills/path/name/SKILL.md`
+
+- `skills/path/name` → Use Read tool on `../skills/path/name/SKILL.md`
 - Load supporting files only when implementing
 
 ## Mandatory Workflow 1: Before ANY Task
 
 **1. Search skills:**
+
 ```bash
 ~/.claude/skills/getting-started/skills-search PATTERN
 ```
@@ -33,7 +36,8 @@ Your personal wiki of proven techniques, patterns, and tools at `~/.claude/skill
 Dispatch subagent (see Workflow 2) to check for relevant past work.
 
 **If skills found:**
-1. READ the skill: `~/.claude/skills/path/skill-name/SKILL.md`
+
+1. READ the skill: `../skills/path/skill-name/SKILL.md`
 2. ANNOUNCE usage: "I'm using the [Skill Name] skill"
 3. FOLLOW the skill (many are rigid requirements)
 
@@ -46,11 +50,13 @@ Dispatch subagent (see Workflow 2) to check for relevant past work.
 **When NOT:** Info in current convo, codebase state questions, first encounter, partner wants fresh thinking
 
 **How (use subagent for 50-100x context savings):**
-1. Dispatch subagent with template: `~/.claude/skills/collaboration/remembering-conversations/tool/prompts/search-agent.md`
+
+1. Dispatch subagent with template: `../skills/collaboration/remembering-conversations/tool/prompts/search-agent.md`
 2. Receive synthesis (200-1000 words) + source pointers
 3. Apply insights (never load raw .jsonl files)
 
 **Example:**
+
 ```
 Partner: "How did we handle auth errors in React Router?"
 You: Searching past conversations...
@@ -69,6 +75,7 @@ You: Searching past conversations...
 "I'm using the [Skill Name] skill to [what you're doing]."
 
 **Examples:**
+
 - "I'm using the Brainstorming skill to refine your idea into a design."
 - "I'm using the Test-Driven Development skill to implement this feature."
 - "I'm using the Systematic Debugging skill to find the root cause."
@@ -81,6 +88,7 @@ You: Searching past conversations...
 **If a skill contains a checklist, you MUST create TodoWrite todos for EACH checklist item.**
 
 **Don't:**
+
 - Work through checklist mentally
 - Skip creating todos "to save time"
 - Batch multiple items into one todo
@@ -116,13 +124,14 @@ The skill itself tells you which type it is.
 **When writing documentation that references other skills:**
 
 Use path format without `@` prefix or `/SKILL.md` suffix:
+
 - ✅ Good: `skills/testing/test-driven-development`
 - ✅ Good: `skills/debugging/systematic-debugging`
 - ❌ Bad: `@skills/testing/test-driven-development/SKILL.md` (force-loads, burns context)
 
 **Why no @ links:** `@` syntax force-loads files immediately, consuming 200k+ context before you need them.
 
-**To read a skill reference:** Use Read tool on `~/.claude/skills/category/skill-name/SKILL.md`
+**To read a skill reference:** Use Read tool on `../skills/category/skill-name/SKILL.md`
 
 ## Creating Skills
 
@@ -139,7 +148,6 @@ Want a skill that doesn't exist? Edit skills/REQUESTS.md (at ~/.claude/skills/RE
 **Skill has checklist?** TodoWrite for every item.
 
 **Skills are mandatory when they exist, not optional.**
-
 
 ## Last thing
 

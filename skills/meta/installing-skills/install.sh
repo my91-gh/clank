@@ -35,7 +35,7 @@ get_repo_path() {
 
 # Backup existing skills directory if it exists
 backup_existing_skills() {
-  local skills_dir="$HOME/.claude/skills"
+  local skills_dir="$HOME/.clank/clank/skills"
 
   if [[ -e "$skills_dir" ]]; then
     local timestamp=$(date +%Y-%m-%d-%H%M%S)
