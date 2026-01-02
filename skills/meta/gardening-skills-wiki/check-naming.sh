@@ -1,7 +1,7 @@
 #!/bin/bash
 # Check naming consistency in skills wiki
 
-SKILLS_DIR="${1:-$HOME/Documents/GitHub/dotfiles/.clank/clank/skills}"
+SKILLS_DIR="${1:-$HOME/.clank/clank/skills}"
 
 echo "## Naming & Structure"
 issues=0

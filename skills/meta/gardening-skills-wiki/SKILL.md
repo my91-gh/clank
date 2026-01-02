@@ -168,7 +168,7 @@ skills/testing/condition-based-waiting
 **Fix:** Rename directory:
 
 ```bash
-cd ~/.claude/skills/testing
+cd ~/.clank/clank/skills/testing
 mv TestingPatterns testing-patterns
 # Update all references to old name
 ```
@@ -196,7 +196,7 @@ mv TestingPatterns testing-patterns
 **Fix:** Remove if no longer needed:
 
 ```bash
-rm -rf ~/.claude/skills/event-based-testing
+rm -rf ~/.clank/clank/skills/event-based-testing
 ```
 
 ## Naming Conventions
@@ -244,10 +244,10 @@ vim ~/.clank/clank/skills/category/INDEX.md
 
 ```bash
 # 1. Move/rename skills
-mv ~/.claude/skills/old-category/skill ~/.claude/skills/new-category/
+mv ~/.clank/clank/skills/old-category/skill ~/.clank/clank/skills/new-category/
 
 # 2. Update all references (grep for old paths)
-grep -r "skills/gardening-skills-wiki/old-category/skill" ~/.claude/skills/
+grep -r "skills/gardening-skills-wiki/old-category/skill" ~/.clank/clank/skills/
 
 # 3. Run health check
 ~/.clank/clank/skills/meta/gardening-skills-wiki/garden.sh
@@ -335,7 +335,7 @@ Validates INDEX completeness.
 **Before committing skill changes:**
 
 ```bash
-~/.claude/skills/meta/gardening-skills-wiki/garden.sh
+~/.clank/clank/skills/meta/gardening-skills-wiki/garden.sh
 # Fix all ❌ errors
 # Consider fixing ⚠️  warnings
 git add .
@@ -345,13 +345,13 @@ git commit -m "Add/update skills"
 **When links feel suspicious:**
 
 ```bash
-~/.claude/skills/meta/gardening-skills-wiki/check-links.sh
+~/.clank/clank/skills/meta/gardening-skills-wiki/check-links.sh
 ```
 
 **When INDEX seems incomplete:**
 
 ```bash
-~/.claude/skills/meta/gardening-skills-wiki/check-index-coverage.sh
+~/.clank/clank/skills/meta/gardening-skills-wiki/check-index-coverage.sh
 ```
 
 ## Common Rationalizations

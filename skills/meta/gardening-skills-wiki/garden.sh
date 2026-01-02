@@ -1,7 +1,7 @@
 #!/bin/bash
 # Master gardening script for skills wiki maintenance
 
-SKILLS_DIR="${1:-$HOME/Documents/GitHub/dotfiles/.clank/clank/skills}"
+SKILLS_DIR="${1:-$HOME/.clank/clank/skills}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "=== Skills Wiki Health Check ==="
