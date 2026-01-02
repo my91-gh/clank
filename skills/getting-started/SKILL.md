@@ -7,7 +7,7 @@ version: 2.0.0
 
 # Getting Started with Skills
 
-Your personal wiki of proven techniques, patterns, and tools at `../skills/`.
+Your personal wiki of proven techniques, patterns, and tools at `/.clank/clank/skills/`.
 
 ## How to Reference Skills
 
@@ -21,7 +21,7 @@ Your personal wiki of proven techniques, patterns, and tools at `../skills/`.
 
 **When you see skill references in documentation:**
 
-- `skills/path/name` → Use Read tool on `../skills/path/name/SKILL.md`
+- `skills/path/name` → Use Read tool on `/.clank/clank/skills/path/name/SKILL.md`
 - Load supporting files only when implementing
 
 ## Mandatory Workflow 1: Before ANY Task
@@ -37,7 +37,7 @@ Dispatch subagent (see Workflow 2) to check for relevant past work.
 
 **If skills found:**
 
-1. READ the skill: `../skills/path/skill-name/SKILL.md`
+1. READ the skill: `/.clank/clank/skills/path/skill-name/SKILL.md`
 2. ANNOUNCE usage: "I'm using the [Skill Name] skill"
 3. FOLLOW the skill (many are rigid requirements)
 
@@ -51,7 +51,7 @@ Dispatch subagent (see Workflow 2) to check for relevant past work.
 
 **How (use subagent for 50-100x context savings):**
 
-1. Dispatch subagent with template: `../skills/collaboration/remembering-conversations/tool/prompts/search-agent.md`
+1. Dispatch subagent with template: `/.clank/clank/skills/collaboration/remembering-conversations/tool/prompts/search-agent.md`
 2. Receive synthesis (200-1000 words) + source pointers
 3. Apply insights (never load raw .jsonl files)
 
@@ -131,13 +131,13 @@ Use path format without `@` prefix or `/SKILL.md` suffix:
 
 **Why no @ links:** `@` syntax force-loads files immediately, consuming 200k+ context before you need them.
 
-**To read a skill reference:** Use Read tool on `../skills/category/skill-name/SKILL.md`
+**To read a skill reference:** Use Read tool on `/.clank/clank/skills/category/skill-name/SKILL.md`
 
 ## Creating Skills
 
 Found something valuable? See skills/meta/creating-skills
 
-Want a skill that doesn't exist? Edit skills/REQUESTS.md (at ~/.claude/skills/REQUESTS.md)
+Want a skill that doesn't exist? Edit skills/REQUESTS.md (at ~/.clank/clank/skills/REQUESTS.md)
 
 ## Summary
 

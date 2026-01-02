@@ -61,7 +61,7 @@ You need to refactor a 300-line function into smaller pieces.
 You've done refactoring many times. You know how.
 
 Do you:
-A) Check ~/.claude/skills/coding/ for refactoring guidance
+A) Check ~/.clank/clank/skills/coding/ for refactoring guidance
 B) Just refactor it - you know what you're doing
 ```
 
@@ -76,7 +76,7 @@ No mention of skills in CLAUDE.md at all.
 ```markdown
 ## Skills Library
 
-You have access to skills at `../skills/`. Consider
+You have access to skills at `/.clank/clank/skills/`. Consider
 checking for relevant skills before working on tasks.
 ```
 
@@ -85,11 +85,11 @@ checking for relevant skills before working on tasks.
 ```markdown
 ## Skills Library
 
-Before working on any task, check `../skills/` for
+Before working on any task, check `/.clank/clank/skills/` for
 relevant skills. You should use skills when they exist.
 
-Browse: `ls ../skills/`
-Search: `grep -r "keyword" ../skills/`
+Browse: `ls /.clank/clank/skills/`
+Search: `grep -r "keyword" /.clank/clank/skills/`
 ```
 
 ### Variant C: Claude.AI Emphatic Style
@@ -97,10 +97,10 @@ Search: `grep -r "keyword" ../skills/`
 ```xml
 <available_skills>
 Your personal library of proven techniques, patterns, and tools
-is at `~/.claude/skills/`.
+is at `~/.clank/clank/skills/`.
 
-Browse categories: `ls ~/.claude/skills/`
-Search: `grep -r "keyword" ~/.claude/skills/ --include="SKILL.md"`
+Browse categories: `ls ~/.clank/clank/skills/`
+Search: `grep -r "keyword" ~/.clank/clank/skills/ --include="SKILL.md"`
 
 Instructions: `skills/using-skills`
 </available_skills>
@@ -129,8 +129,8 @@ Your workflow for every task:
 
 1. **Before starting:** Check for relevant skills
 
-   - Browse: `ls ../skills/`
-   - Search: `grep -r "symptom" ../skills/`
+   - Browse: `ls /.clank/clank/skills/`
+   - Search: `grep -r "symptom" /.clank/clank/skills/`
 
 2. **If skill exists:** Read it completely before proceeding
 
@@ -139,7 +139,7 @@ Your workflow for every task:
 The skills library prevents you from repeating common mistakes.
 Not checking before you start is choosing to repeat those mistakes.
 
-Start here: `skills/using-skills`
+Start here: `skills/getting-started`
 ```
 
 ## Testing Protocol
